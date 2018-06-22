@@ -26,7 +26,7 @@ app.use(express.static("public"));
 // This connects to the Mongo DB
 // mongoose.connect("mongodb://localhost/scraper");
 mongoose.connect("mongodb://yellingfire:303scraper@ds153700.mlab.com:53700/heroku_lvbq4gz6");
-
+var db = mongoose.connection
 // Routes
 
 app.get("/scrape", function(req, res) {
