@@ -8,10 +8,9 @@ var cheerio = require("cheerio");
 
 // Require all models
 var db = require("./models");
-// SET MONGOLAB_URI = "mongodb://yellingfire:303scraper@ds153700.mlab.com:53700/heroku_lvbq4gz6";
 
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080 || process.env.MONGOLAB_URI;
 
 // Initialize Express
 var app = express();
