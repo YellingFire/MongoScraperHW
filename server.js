@@ -14,7 +14,7 @@ const Note = require("./models/note");
 const PORT = process.env.PORT || 3000;
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+  app.use(express.static("/"));
 }
 
 // Initialize Express
