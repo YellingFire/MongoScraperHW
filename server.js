@@ -29,7 +29,7 @@ app.use(express.static("public"));
 
 // This connects to the Mongo DB
 // mongoose.connect("mongodb://localhost/scraper");
-mongoose.connect(process.env.MONGODB_URI || "mongodb://yellingfire:303scraper@ds153700.mlab.com:53700/heroku_lvbq4gz6");
+mongoose.connect(process.env.MONGODB_URI);
 var db = mongoose.connection
 // Routes
 
