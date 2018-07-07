@@ -13,12 +13,12 @@ const Note = require("./models/note");
 
 const PORT = process.env.PORT || 3000;
 
+// Initialize Express
+const app = express();
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("/"));
 }
-
-// Initialize Express
-const app = express();
 
 // morgan creates a log of requests
 app.use(logger("dev"));
